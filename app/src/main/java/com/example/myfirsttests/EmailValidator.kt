@@ -16,9 +16,7 @@ class EmailValidator: TextWatcher {
         isValid = isValidEmail(s)
     }
 
-    private fun isValidEmail(email: CharSequence?): Boolean {
-        return email != null && EMAIL_PATTERN.matcher(email).matches()
-    }
+
 
     companion object {
 
@@ -32,6 +30,9 @@ class EmailValidator: TextWatcher {
                     ")+"
         )
 
+        fun isValidEmail(email: CharSequence?): Boolean {
+            return email != null && EMAIL_PATTERN.matcher(email).matches()
+        }
     }
 
 
