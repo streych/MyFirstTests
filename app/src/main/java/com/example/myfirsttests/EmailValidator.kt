@@ -16,8 +16,6 @@ class EmailValidator: TextWatcher {
         isValid = isValidEmail(s)
     }
 
-
-
     companion object {
 
         private val EMAIL_PATTERN = Pattern.compile(
